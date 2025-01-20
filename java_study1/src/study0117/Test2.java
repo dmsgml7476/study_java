@@ -28,6 +28,21 @@ public class Test2 {
 		System.out.println("총 단축시간(시간) : " + 단축수명시간);
 		System.out.println("총 단축시간(일) : " + 단축수명일);
 		
+		
+		int appleBox = 20;
+		int orangeBox = 45;
+		int appleBoxnum = 11;
+		int orangeBoxnum = 12;
+		
+	    int totalApple = appleBox * appleBoxnum;
+	    int totalOrange = orangeBox * orangeBoxnum;
+	    
+	    int totalNum = totalApple + totalOrange;
+	    
+	    System.out.println("과일 총 개수 : " + totalNum);
+	    
+	    
+	    
 	}
 
 }
