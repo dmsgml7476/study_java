@@ -114,6 +114,8 @@ public class test {
 	    boolean isApple = true; // 참, 거짓 값을 가지는 타입.
 	    
 	    
+	    
+	    
 	}
 	
 }
