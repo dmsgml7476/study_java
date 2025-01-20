@@ -30,7 +30,7 @@ public class Test2 {
 		
 		
 		int appleBox = 20;
-		int orangeBox = 45;
+		int orangeBox = 15;
 		int appleBoxnum = 11;
 		int orangeBoxnum = 12;
 		
