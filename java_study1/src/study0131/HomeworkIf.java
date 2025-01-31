@@ -1,5 +1,7 @@
 package study0131;
 
+import java.util.Scanner;
+
 public class HomeworkIf {
 
 	public static void main(String[] args) {
@@ -19,9 +21,38 @@ public class HomeworkIf {
 		// 8시간 주차시 무조건 10000원
 		// 주차 몇분 했는지 입력하여 주차요금이 얼마인지 출력하세요
 		// 시간과 분 따로 따로 입력하기
-
-
-
+		
+		Scanner scan = new Scanner(System.in);
+		
+        int default_hour = 2;
+		int default_minute = 30;  // 기본시간
+		int cost = 1000;  // 기본요금
+		int cost_2h = 1700;  // 2시간 기본요금
+		int cost_4h = 2500;  // 4시간 기본요금
+		int pTime_h = 0;  // 주차시간 (시간)
+		int pTime_m = 0;  // 주차시간 (분)
+		int tenM= 100;  // 10분에 100원 추가요금
+		
+		System.out.print("주차 시간(분) : ");
+		pTime_m=scan.nextInt();
+		System.out.print("주차 시간(시간) : ");
+		pTime_h = scan.nextInt();
+		
+		if (0<pTime_m && pTime_m <= default_minute && pTime_h == 0) {System.out.println("주차 요금 : "+cost + " 원");
+		} else if (pTime_h < 2) {pTime_m = pTime_h*60 + pTime_m - 30; cost= (pTime_m/10)*tenM + cost;
+		System.out.println("주차 요금 : " + cost + " 원");
+		} else if (pTime_h == 2 && pTime_m < 10) {
+			
+		}
+		
+		/*
+		 * if (0<pTime && pTime <= default_time) { System.out.println("주차 요금 : " + cost
+		 * + " 원"); } else { pTime= pTime-30; cost=(pTime/10)*tenM +cost;
+		 * System.out.println("주차 요금 : " + cost); }
+		 * 
+		 * 
+		 * 
+		 */
 	}
 
 }
