@@ -24,7 +24,9 @@ public class HomeworkIf {
 		
 		Scanner scan = new Scanner(System.in);
 		
-        int default_hour = 2;
+
+        
+        
 		int default_minute = 30;  // 기본시간
 		int cost = 1000;  // 기본요금
 		int cost_2h = 1700;  // 2시간 기본요금
@@ -32,27 +34,43 @@ public class HomeworkIf {
 		int pTime_h = 0;  // 주차시간 (시간)
 		int pTime_m = 0;  // 주차시간 (분)
 		int tenM= 100;  // 10분에 100원 추가요금
+		int price = (pTime_m/10)*tenM + cost;
+
 		
 		System.out.print("주차 시간(분) : ");
 		pTime_m=scan.nextInt();
 		System.out.print("주차 시간(시간) : ");
 		pTime_h = scan.nextInt();
 		
-		if (0<pTime_m && pTime_m <= default_minute && pTime_h == 0) {System.out.println("주차 요금 : "+cost + " 원");
-		} else if (pTime_h < 2) {pTime_m = pTime_h*60 + pTime_m - 30; cost= (pTime_m/10)*tenM + cost;
-		System.out.println("주차 요금 : " + cost + " 원");
-		} else if (pTime_h == 2 && pTime_m < 10) {
-			
+		if (0<pTime_m && pTime_m <= default_minute && pTime_h == 0) {
+			System.out.println("주차 요금 : "+cost + " 원");
+		}
+		else if (pTime_h < 2) {
+			pTime_m = pTime_h*60 + pTime_m - 30;
+			cost= (pTime_m/10)*tenM + cost;
+			System.out.println("주차 요금 : "+cost + " 원");
+		}
+		else if (pTime_h == 2 && pTime_m < 10) {
+			System.out.println("주차 요금 : " + cost_2h + " 원");
+		}
+		else if (pTime_h < 4) {
+			pTime_m = pTime_h*60 + pTime_m - 120;
+			cost_2h= (pTime_m/10)*tenM + cost_2h;
+			System.out.println("주차 요금 : "+cost_2h + " 원");
+		}
+		else if (pTime_h == 4 && pTime_m < 10) {
+			System.out.println("주차 요금 : " + cost_4h + " 원");
+		}
+		else if (pTime_h < 8) {
+			pTime_m = pTime_h*60 + pTime_m - 240;
+			cost_4h= (pTime_m/10)*tenM + cost_4h;
+			System.out.println("주차 요금 : "+cost_4h + " 원");
+		} else {
+			System.out.println("주차 요금 : 10000 원");
 		}
 		
-		/*
-		 * if (0<pTime && pTime <= default_time) { System.out.println("주차 요금 : " + cost
-		 * + " 원"); } else { pTime= pTime-30; cost=(pTime/10)*tenM +cost;
-		 * System.out.println("주차 요금 : " + cost); }
-		 * 
-		 * 
-		 * 
-		 */
+		// 반복되는 것을 줄이려 노력해보자!!!!!!!!!!!!!!!!
+		
 	}
 
 }
