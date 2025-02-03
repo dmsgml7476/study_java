@@ -34,7 +34,6 @@ public class HomeworkIf {
 		int pTime_h = 0;  // 주차시간 (시간)
 		int pTime_m = 0;  // 주차시간 (분)
 		int tenM= 100;  // 10분에 100원 추가요금
-		int price = (pTime_m/10)*tenM + cost;
 
 		
 		System.out.print("주차 시간(분) : ");
@@ -69,11 +68,9 @@ public class HomeworkIf {
 			System.out.println("주차 요금 : 10000 원");
 		}
 		
-<<<<<<< HEAD
+
 		// 반복되는 것을 줄이려 노력해보자!!!!!!!!!!!!!!!!
 		
-=======
->>>>>>> refs/remotes/origin/main
 	}
 
 }
