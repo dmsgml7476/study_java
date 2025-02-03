@@ -31,6 +31,7 @@ public class HomworkA {
 		}
 		
 		System.out.println((totalTime/10)*100+cost);
+		// 계산을 해본 후에 코드를 짜기.
 
 	}
 
