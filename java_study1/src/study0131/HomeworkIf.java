@@ -69,8 +69,11 @@ public class HomeworkIf {
 			System.out.println("주차 요금 : 10000 원");
 		}
 		
+<<<<<<< HEAD
 		// 반복되는 것을 줄이려 노력해보자!!!!!!!!!!!!!!!!
 		
+=======
+>>>>>>> refs/remotes/origin/main
 	}
 
 }
