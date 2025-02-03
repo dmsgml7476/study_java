@@ -27,10 +27,11 @@ public class HomworkA {
 			cost = 1700;
 			totalTime -= 120;
 		} else { // 2시간 미만 주차시
-			totalTime -= 30;
+			totalTime = totalTime<30 ? 0 : totalTime-30;
 		}
 		
-		System.out.println((totalTime/10)*100+cost);
+		int price = (totalTime/10)*100+cost;
+		System.out.println("주차 요금 : " + price+ "원");
 		// 계산을 해본 후에 코드를 짜기.
 
 	}
