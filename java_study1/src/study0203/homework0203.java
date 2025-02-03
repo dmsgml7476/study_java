@@ -18,16 +18,20 @@ public class homework0203 {
 		
 		int user = 0, com = 0;
 		
-		System.out.print("1. 가위, 2. 바위, 3. 보");
+		System.out.print("1. 가위, 2. 바위, 3. 보 : ");
 		user=scan.nextInt();
 		
 		com = (int)(Math.random()*3+1);
 		
 		if (com == user) {
 			System.out.println("비겼습니다");
-			
+		} else if ((user == 1 && com == 2) || (user == 2 && com ==3) || (user == 3 && com == 1) ) {
+			System.out.println("졌습니다.");
+				
+		} else {
+			System.out.println("이겼습니다");
 		}
-		}
+		
 
 	}
 
