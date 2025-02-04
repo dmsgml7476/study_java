@@ -22,7 +22,7 @@ public class homework0203 {
 		user=scan.nextInt();
 		
 		com = (int)(Math.random()*3+1);
-		
+		System.out.println(com);
 		if (com == user) {
 			System.out.println("비겼습니다");
 		} else if ((user == 1 && com == 2) || (user == 2 && com ==3) || (user == 3 && com == 1) ) {
