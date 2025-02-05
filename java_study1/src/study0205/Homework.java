@@ -29,9 +29,12 @@ public class Homework {
 		System.out.print("컴퓨터가 맞출 정수를 제시하시오: ");
 		int user = scan.nextInt();
 		
-		com = (int)(Math.random()*com_max+com_min);
+		
+		
+		
 		
 		while (true) {
+			com = (int)(Math.random()*com_max+com_min);
 			
 			if (com == user) {
 				System.out.println(com);
@@ -43,18 +46,14 @@ public class Homework {
 					System.out.println(com);
 					System.out.println("down");
 					
-					com_max = com;
-					
-					com = (int)(Math.random()*com_max+com_min);
+					com_max = com -1;
 					
 				}
 				else {
 					System.out.println(com);
 					System.out.println("up");
-					com_max = (com_max - com);
-					com_min = com;
-					com = (int)(Math.random()*(50-com)+com_min);}
-			
+					com_min = com +1;
+				}
 			}
 				
 			
