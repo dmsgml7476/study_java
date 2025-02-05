@@ -20,7 +20,6 @@ public class Test_coin {
 		int user =0, coin=0, win=0;;
 		
 		
-		
 		for (int num=1; num<=10 ; num++) {
 			System.out.print("동전 1.앞면, 2.뒷면을 맞추세요 : ");
 			user=sc.nextInt();
