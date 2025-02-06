@@ -33,7 +33,7 @@ public class Homework {
 		while (true) {
 			com = (int)(Math.random()*(com_max - com_min+1) + com_min);
 			
-			//(29~ 40 => (max-min+1)+min => (com-1 - min +1) + min / (max - com + 1 +1) +com+1
+			//(29~ 40 => (max-min+1)+min => (com-1 - min +1) + min / (max - com + 1 +1) +com+1/
 			
 			if (com == user) {
 				System.out.println(com);
