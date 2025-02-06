@@ -8,11 +8,13 @@ public class JavaLoop {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		
+		// 조건식과 반복문이 연관 있을때 do while을 쓰는 것을 고려!
 		int user=0;
 		do {
 			System.out.print("1.가위 2.바위 3.보 ");
-//			user = sc.nextInt();
-		} while (!(user>=1 && user <=3));
+			user = sc.nextInt();
+		} while (!(user>=1 && user <=3)); 
 		
 		
 //		int user=0;
