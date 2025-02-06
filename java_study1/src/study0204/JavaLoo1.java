@@ -9,7 +9,7 @@ public class JavaLoo1 {
 //		System.out.println(2);
 //		System.out.println(3);
 //		System.out.println(4);
-//		System.out.println(5);피
+//		System.out.println(5);
 		
 		Scanner scan= new Scanner(System.in);
 		
