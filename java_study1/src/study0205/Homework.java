@@ -30,29 +30,28 @@ public class Homework {
 		int user = scan.nextInt();
 		
 		
-		
-		
-		
 		while (true) {
-			com = (int)(Math.random()*com_max+com_min);
+			com = (int)(Math.random()*(com_max - com_min+1) + com_min);
+			
+			//(29~ 40 => (max-min+1)+min => (com-1 - min +1) + min / (max - com + 1 +1) +com+1
 			
 			if (com == user) {
 				System.out.println(com);
 				System.out.println("정답!");
 				
 				break;
+				
 			} else {
 				if (com > user) {
 					System.out.println(com);
 					System.out.println("down");
 					
-					com_max = com -1;
-					
+					com_max = com - 1; 
 				}
 				else {
 					System.out.println(com);
 					System.out.println("up");
-					com_min = com +1;
+					com_min = com + 1;  
 				}
 			}
 				
