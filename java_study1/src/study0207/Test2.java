@@ -1,5 +1,7 @@
 package study0207;
 
+import java.util.Scanner;
+
 public class Test2 {
 
 	public static void main(String[] args) {
@@ -46,7 +48,7 @@ public class Test2 {
 //		}
 //		
 //		// 문제 5번
-		
+//		
 //		int num = 1;
 //		
 //		for (int line = 1; line<=3; line++) {
@@ -56,7 +58,7 @@ public class Test2 {
 //			}
 //		System.out.println();
 //		}
-		
+//		
 //		for (int i=0; i<=2; i++) {
 //			for(int k=i*4; k<=(i*4)+3; k++) {
 //				System.out.print(k + " ");
@@ -64,44 +66,63 @@ public class Test2 {
 //			System.out.println();
 //		}
 //		
+//		
+//		// 문제 6
+//		
+//		
+//
+//		
+//	
+//		for (int a =3; a <= 10; a++) {
+//			// 첫번째 숫자 돌리기
+//			for (int b=1; b <=9; b++) {
+//				// 두번째 숫자 돌리기
+//				for (int c=2; c <=10; c++) {
+//					//세번째 숫자 돌리기
+//					for (int d = 1; d <= 8; d++) {
+//						//네번째 숫자 돌리기
+//						
+//						if (a!=b && a!=c && a!=d && b!=c && b!=d && c!=d) {
+//							if (a > d) {
+//								if (b < c) {
+//									int pw = a*1000 + b*100 + c*10 + d;
+//									int rpw = d*1000 + c*100 + b*10 + a;
+//									
+//									if((pw+rpw)==16566) {
+//										System.out.println(pw);
+//										break;
+//									}
+//									
+//								}
+//							}
+//						}
+//						
+//						
+//						
+//						
+//					}//네번째 숫자 돌리기
+//				}//세번째 숫자 돌리기
+//			}// 두번째 숫자 돌리기
+//		}// 첫번째 숫자 돌리기
 		
-		// 문제 6
+		//문제 7. - 알파벳 찾기 (반드시 반복문을 이용)
+		// 알파벳(대문자 또는 소문자 모두 가능하게) 입력
+		// 입력한 알파벳이 몇번째 알파벳인지 찾기 - 반드시 for문으로
+		
+		Scanner sc= new Scanner(System.in);
+		
+		int spell=0;
 		
 		
-
+		System.out.print("알파벳을 입력하라 : ");
+		String user = sc.next();
 		
-	
-		for (int a =3; a <= 10; a++) {
-			// 첫번째 숫자 돌리기
-			for (int b=1; b <=9; b++) {
-				// 두번째 숫자 돌리기
-				for (int c=2; c <=10; c++) {
-					//세번째 숫자 돌리기
-					for (int d = 1; d <= 8; d++) {
-						//네번째 숫자 돌리기
-						
-						if (a!=b && a!=c && a!=d && b!=c && b!=d && c!=d) {
-							if (a > d) {
-								if (b < c) {
-									int pw = a*1000 + b*100 + c*10 + d;
-									int rpw = d*1000 + c*100 + b*10 + a;
-									
-									if((pw+rpw)==16566) {
-										System.out.println(pw);
-										break;
-									}
-									
-								}
-							}
-						}
-						
-						
-						
-						
-					}//네번째 숫자 돌리기
-				}//세번째 숫자 돌리기
-			}// 두번째 숫자 돌리기
-		}// 첫번째 숫자 돌리기
+		
+		
+		System.out.printf(user);
+		
+		
+		
 
 		
 		
