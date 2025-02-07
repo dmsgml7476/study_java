@@ -28,7 +28,9 @@ public class Homework0207 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int user_1=0, user_2=0, user_3=0, com_1=0, com_2=0, com_3=0, str=0, ball=0, out=0;
+		System.out.println("숫자 야구 게임!!");
+		
+		int user_1=0, user_2=0, user_3=0, com_1=0, com_2=0, com_3=0;
 		
 		
 		
@@ -37,43 +39,45 @@ public class Homework0207 {
 		com_3 = (int)(Math.random()*9+1);
 		
 		if (com_1 != com_2 && com_2 != com_3 && com_3 != com_1) {
-			System.out.println(com_1 + " " + com_2 + " " + com_3);
+//			System.out.println(com_1 + " " + com_2 + " " + com_3);
 			while (true) {
 				System.out.print("숫자를 맞추세요 : ");
 				user_1 = sc.nextInt();
 				user_2 = sc.nextInt();
 				user_3 = sc.nextInt();
 				
-//				
-//				if (user_1 != com_2 && user_1 != com_2 && user_1 != com_3)
-//					ball++;
-//				if (user_2 != com_2 && user_2 != com_2 && user_2 != com_3)
-//					ball++;
-//				if (user_3 != com_2 && user_3 != com_2 && user_3 != com_3)
-//					ball++;
-//				
+				int ball = 0, out=0, str=0;
+				
+				
+				if (user_1 != com_1 && user_1 != com_2 && user_1 != com_3)
+					out++;
+				if (user_2 != com_1 && user_2 != com_2 && user_2 != com_3)
+					out++;
+				if (user_3 != com_1 && user_3 != com_2 && user_3 != com_3)
+					out++;
+				
 				
 				if (user_1 == com_2 || user_1 == com_3) 
 					ball++;
 				if (user_2 == com_1 || user_2 == com_3) 
 					ball++;
-				
 				if (user_3 == com_1 || user_3 == com_2) 
 					ball++;
 				
 				if (user_1 == com_1) 
 					str++;
-			
 				if (user_2 == com_2) 
 					str++;
 				if (user_3 == com_3) 
 					str++;
 				
+				if (str == 3) {
+					System.out.println("*******정답입니다!*********");
+					break;
+				}
 				
 				
-				
-				System.out.println("스트라이크 : " + str + "볼 : " + ball + "아웃 : " + out);
-				
+				System.out.println("스트라이크 : " + str + " 볼 : " + ball + " 아웃 : " + out);
 				
 				
 				
