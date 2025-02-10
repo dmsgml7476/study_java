@@ -111,17 +111,34 @@ public class Test2 {
 		
 		Scanner sc= new Scanner(System.in);
 		
-		int spell=0;
+		int line=0;
 		
+		
+//		System.out.print("알파벳을 입력하라 : ");
+//		char user = sc.next().charAt(0);
+//		
+//		
+//		for (char i = 'A'; i <='Z'; i++ ) {
+//			line++;
+//			// 아스키 코드에서 A - 65 (10진수), a - 97 (10진수)
+//				
+//			if (user == i) {
+//				System.out.println(line);
+//			}
+//		
+//			
+//		}
 		
 		System.out.print("알파벳을 입력하라 : ");
-		String user = sc.next();
+		char alp = sc.nextLine().charAt(0);
 		
-		
-		
-		System.out.printf(user);
-		
-		
+		for (int i = 1; i <=26; i++ ) {
+//			// 아스키 코드에서 A - 65 (10진수), a - 97 (10진수)
+			if(alp == (i+64) || alp==(i+96)) {
+				System.out.printf("알파벳 %c는 %d번째 알파벳 \n", alp, i);
+				break;
+			}
+		}
 		
 
 		

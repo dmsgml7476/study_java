@@ -87,7 +87,23 @@ public class Homework0207 {
 			return;
 		}
 
-		
+//		
+//		int com = 0, user = 0;
+//		
+//		for (int i=1; i<=3; i++) {
+//			com = (int)(Math.random()*9+1);
+//			
+//			System.out.print(com);
+//		}
+//		
+//		int str =0, balls=0, out=0;
+//		
+//		for (int j=0; j<=3; j++) {
+//			System.out.print("숫자를 입력하세요");
+//			
+//		}
+
+
 
 		
 		
