@@ -11,12 +11,18 @@ public class Homework0211 {
 		
 		int[] game = new int[25];
 		
-		// game 배열에 값 채우기
+		int idx=0;
 		
-		for (int i=0; i<game.length; i++) {
-			game[i] = (int) (Math.random()*50+1);
-			boolean isSame = false;
+		// game 배열에 값 채우기
+
+		int temp = (int) (Math.random()*50+1);
+		boolean isSame = false;
+		for (int i = 0; i<idx; i++) {
+			if(game[i] == temp)
+				isSame=true;
 		}
+		if (!isSame)
+			game[idx++] = temp;
 //		System.out.println(Arrays.toString(game));
 		
 
