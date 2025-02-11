@@ -6,21 +6,21 @@ public class JavaArray2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-//		
+		
 //		// 7개 정수를 저장할 수 있는 배열을 선언하고
 //		// 정수 7개를 입력한뒤 모두 출력하세요.
 //		
 ////		
-////		int [] array = new int[7];
-////		
-////		for (int i=0; i<array.length; i++) {
-////			System.out.print("정수를 입력하시오 : ");
-////			array[i] = sc.nextInt();
-////		}
-////		
-////		for (int i=0; i<array.length; i++) {
-////			System.out.println("배열값 : " + array[i]); //0 번 인덱스부터 6번 인덱스까지
-////		}
+//		int [] array = new int[7];
+//		
+//		for (int i=0; i<array.length; i++) {
+//			System.out.print("정수를 입력하시오 : ");
+//			array[i] = sc.nextInt();
+//		}
+//		
+//		for (int i=0; i<array.length; i++) {
+//			System.out.println("배열값 : " + array[i]); //0 번 인덱스부터 6번 인덱스까지
+//		}
 //		
 //		int size=5;
 //		
@@ -156,7 +156,7 @@ public class JavaArray2 {
 //		// 문자열 비교 -- 2. compareTo => 같은 문자일경으 0 출력, 다르면 음수 또는 양수. 주 목적 정렬.
 //		
 //		System.out.println(name1.compareTo(name2));
-//		// compareTo : 0 이라면 두 문자열이 동일
+//		// compareTo : 0 이라면 두 문자열이 동일 = 정렬로 사용
 //		//       양수 : 사전적 순서가 앞일 경우 (name2)가 name1 보다 앞인경우
 //		//       음수 : 사전적 순서가 뒤인 경우 (name2)가 name1 보다 뒤인경우
 		
