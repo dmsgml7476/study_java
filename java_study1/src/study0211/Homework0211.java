@@ -29,10 +29,11 @@ public class Homework0211 {
 		}
 		
 
-		
+		int wit = 0, len=0, cro=0;
 //		
 //		// 5줄 5칸 출력
 //	
+		
 		while(true) {
 			for (int i=0; i<=4; i++) { // 빙고판 출력부분
 				for (int k=0; k<=4; k++) {
@@ -42,6 +43,8 @@ public class Homework0211 {
 						System.out.printf(" %2s ", "■");
 					else
 					System.out.printf(" %2d ", game[i*5+k]);
+					
+					
 				}
 				System.out.println();
 			}
@@ -51,10 +54,13 @@ public class Homework0211 {
 			
 			
 			
+			
 			for (int i=0; i<game.length; i++) {
 				if (game[i] == num) {// 내가 입력한 숫자를 배열에서 찾기
 					game[i] = 0;
+					
 				}
+				
 			}
 		}
 //		
