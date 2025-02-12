@@ -45,11 +45,14 @@ public class Homework0211 {
 					System.out.printf(" %2d ", game[i*5+k]);
 					
 					
+					
+					
 				}
 				System.out.println();
 			}
 			
-			System.out.print("숫자 선택 : ");
+			System.out.print("숫자 선택 : "
+					+ "");
 			int num = scan.nextInt(); // 빙고판에 있는 숫자 입력
 			
 			
