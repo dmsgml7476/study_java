@@ -15,12 +15,12 @@ public class me_com {
 		// game 배열에 값 채우기
 		int wit_1 = 0, wit_2 =0, wit_3=0, wit_4=0, wit_5=0, 
 		len_1 = 0, len_2 =0, len_3=0, len_4=0, len_5=0, 
-		cro_1 = 0, cro_2 =0, bingo=0;
+		cro_1 = 0, cro_2 =0, bingo=0, com_1=0, x=0, y=0;
 		
 		
 		
 		while(true) {
-			int temp = (int) (Math.random()*25+1);
+			int temp = (int) (Math.random()*50+1);
 			boolean isSame = false;
 			for (int i=0; i<idx; i++) {
 				if (game[i]==temp)
@@ -31,8 +31,7 @@ public class me_com {
 			if (idx==game.length) break;
 		}
 		
-
-		
+     
 //		
 //		// 5줄 5칸 출력
 //	
@@ -43,15 +42,25 @@ public class me_com {
 					if(game[i*5+k]==0) {
 						System.out.printf(" %2s ", "■");
 					}
+					else if (game[i*5+k]==99){
+						System.out.printf(" %2s ", "□");
+					}
 					else
 					System.out.printf(" %2d ", game[i*5+k]);
+					
+					
+					do {
+					com_1 = (int) (Math.random()*50+1);
+					} while (com_1 == 0 && !(com_1 == game[i*5+k]) );
+					
+					
 				}
 				System.out.println();
 			}
 		    
 			
 			if (bingo == 5) {		    	
-				System.out.println("빙고 승리!");
+				System.out.println("빙고 완성!");
 				break;}
 			
 			
@@ -60,7 +69,8 @@ public class me_com {
 					+ "");
 			int num = scan.nextInt(); // 빙고판에 있는 숫자 입력
 			
-					
+
+			System.out.println(com_1);
 			
 			for (int i=0; i<game.length; i++) {
 				if (game[i] == num) {// 내가 입력한 숫자를 배열에서 찾기
@@ -81,6 +91,9 @@ public class me_com {
 					if (i%6 == 0) {cro_1++;}
 					if (i%4 == 0  && i != 0 && i != 24) {cro_2++;}
 				}
+				if (game[i] == com_1) {
+					game[i] = 99;
+				}
 				
 			}
 			
@@ -100,7 +113,7 @@ public class me_com {
 			if (cro_1 == 5) {bingo++; System.out.println(bingo + "줄 빙고 성공!"); cro_1 =0;}
 			if (cro_2 == 5) {bingo++; System.out.println(bingo + "줄 빙고 성공!"); cro_2 =0;}
 			
-			System.out.println(bingo);
+//			System.out.println(bingo);
 			
 			
 		}

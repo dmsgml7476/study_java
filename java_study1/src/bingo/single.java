@@ -50,7 +50,7 @@ public class single {
 			}
 		    
 			
-			if (bingo == 5) {		    	
+			if (bingo == 3) {		    	
 				System.out.println("빙고 승리!");
 				break;}
 			
@@ -97,7 +97,7 @@ public class single {
 			if (cro_1 == 5) {bingo++; System.out.println(bingo + "줄 빙고 성공!"); cro_1 =0;}
 			if (cro_2 == 5) {bingo++; System.out.println(bingo + "줄 빙고 성공!"); cro_2 =0;}
 			
-			System.out.println(bingo);
+//			System.out.println(bingo);
 			
 			
 		}
