@@ -104,8 +104,37 @@ public class JavaTest1 {
 		
 		 */
 		
-		int[][] seat = new int[12][8]; 
+		int[][] seat = new int[8][12];
+		int num = 0;
+		
+		
+		for (int i = 0; i<seat.length; i++) {
+			for (int k=0; k<seat[i].length; k++) {
+				seat[i][k] = num;
+				num=(int)(Math.random()*2);
+				System.out.print(seat[i][k]);
+			}
+			System.out.println();
+		}
+		
+		System.out.print("예약 좌석 수 : ");
+		int ticket = scan.nextInt();
+		int count=0, x=0, y=0;
 
+
+		for (int i = 0; i<seat.length; i++) {
+			for (int k=0; k<seat[i].length; k++) {
+				if (seat[i][k] == 0) {
+					count++;
+  				    System.out.println(count);
+					
+				}
+				if (seat[i][k] == 1) {
+					count=0;
+				}
+			}
+			
+		}
 	
 
 	}
