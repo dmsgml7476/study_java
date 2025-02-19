@@ -37,8 +37,40 @@ public class ClassArray {
 		//int[] a = new int[] {1,2,3,4,5}
 		
 		Member info = new Member()/*<- 생성자 메소드*/;
+		System.out.println(info);
+		
+		Movie info2 = new Movie();
+		info2.title = "겨울왕국";
+		info2.genre = "애니메이션";
+		info2.num = 10320000;
+		info2.year = 2014;
+		 
+		System.out.println("제목 : " + info2.title);
+		System.out.println("장르 : " + info2.genre);
+		System.out.println("관객수 : " + info2.num);
+		System.out.println("개봉년도 : " + info2.year);
+		
+		System.out.println(info.name);
+		
+		Member m1 = new Member();
+		System.out.println(m1.name);
+		
+		Member info3 = new Member(20, "군인", "김유신");
+		System.out.println(info3.job);
 		
 
 	}
 
 }
+
+/*
+
+	영화 제목, 장르, 관객수, 개봉년도
+	위 항목의 데이터를 저장 할 수 있는 클래스 정의
+	영화 한편에 대한 데이터 입력하고 출력까지
+
+
+*/
+
+
+
