@@ -11,8 +11,8 @@ public class JavaString2 {
 		// 문자열에서 특정 문자 추출
 		System.out.println(word.charAt(7));
 		
-		// 문자열에서 지정된위치 문자열 추출
-		System.out.println(word.substring(7));
+//		 문자열에서 지정된위치 문자열 추출
+//		System.out.println(word.substring(7));
 		
 		// 2번 인덱스부터 6번 인덱스까지.
 		System.out.println(word.substring(2, 6));
