@@ -27,7 +27,7 @@ public class JavaControll {
 		
 		int aYear =2025;
 		
-		Movie m = new Movie()
+		Movie m = new Movie();
 	}
 
 }
