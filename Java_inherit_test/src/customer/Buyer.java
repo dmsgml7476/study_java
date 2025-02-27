@@ -1,10 +1,13 @@
 package customer;
 
+import java.util.Date;
+
 import store.Fruit;
 
 public class Buyer {
 	private int money;
 	private Fruit item;              // 구매한 음료 또는 컵과일 저장 변수
+	private Date buyDate;   // 자
 
 	public Buyer(int money) {  // Buyer 객체 생성시 동작할 생성자 메서드
 		this.money=money;
@@ -29,9 +32,24 @@ public class Buyer {
 		this.item = item;
 	}
 	
+    public void buyDate(Date buyDate) {
+    	this.buyDate = buyDate;
+    }
+	
+	public Date getBuyDate() {
+		return buyDate;
+	}
+
+
+	public void setBuyDate(Date buyDate) {
+		this.buyDate = buyDate;
+	}
+
+
 	@Override
 	public String toString() {
-	     return ("고객은 " + money + "원 가지고 있습니다");
+	     return ("고객 남은돈 : " + money + "원 " + "구매일 : "+ this.buyDate + " 구매음료 : " + this.item);
+	    
 	}
 
 	
