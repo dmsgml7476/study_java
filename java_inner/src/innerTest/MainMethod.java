@@ -11,13 +11,11 @@ public class MainMethod {
 		
 		// 자전거   체인   (포함관계)
 		Tire tire = new Tire();
-		tire.setInch(18);
+		tire.setInch( 18 );
 		
+		Car car = new Car( tire );
 		
-		Car car = new Car(tire);
-		
-		
-		System.out.println(car.getTire().getInch());
+		System.out.println( car.getTire().getInch() );
 
 	}
 

@@ -10,5 +10,4 @@ public class Tire {
 	public void setInch(int inch) {
 		this.inch = inch;
 	}
-
 }
