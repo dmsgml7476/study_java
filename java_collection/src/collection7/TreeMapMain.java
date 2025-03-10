@@ -9,7 +9,7 @@ public class TreeMapMain {
 		
 		tree.put(100, "이순신");	tree.put(342, "김유신");
 		tree.put(541, "장영실");	tree.put(874, "나문희");
-		tree.put(241, "이순재");	tree.put(234	, "박하선");
+		tree.put(241, "이순재");	tree.put(234, "박하선");
 		
 		System.out.println(tree);
 		
