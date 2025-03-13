@@ -34,9 +34,18 @@ public class MainMt {
 		};
 		
 		
-		Create device1 = new Create();
-		device1.start();
+		Create[] device = new Create[알.length];
+		for (int i=0; i<알.length; i++)
+			device[i] = new Create();
+		// 알 갯수만큼 스레드를 만들었다. -왜? 알 최대치만큼 스레드가 있었으면 좋겠다는 개인적인 생각.
 		
+		device[0].start(); 
+		device[1].start();
+		device[2].start(); 
+		device[3].start();
+		
+//		Create device1 = new Create();
+//		device1.start();
 		// 부화 시킬 공룡을 선택하여 부화를 진행할 것이다.
 		// 스레드를 통해 각 공룡별 시간만큼 동작하도록 할것이다.
 		
@@ -47,13 +56,15 @@ public class MainMt {
 			System.out.println("1~4중 하나 : ");
 			int select = sc.nextInt();
 			
+			
 			Create.hatch(알[select-1]); // 내가 선택한 공룔알을 부화장치를 통해 부화시킨다. - 스레드를 부화장치라고 하겠다.
 			// 부화장치가 하나뿐이니까 내가 선택할수 있는 공룡알은 하나뿐이다. 부화가 되면 다음 공룡알을 선택해야 한다 그런거는 내일 할꺼다.
+			System.out.println((i+1)+"번 부화장치 가동");
+			
+			System.out.println("계속 해? (1-계속) : ");
+			if (sc.nextInt() != 1)
+				break;
 		}
-		
-		
-		
-		
 		
 		
 		
