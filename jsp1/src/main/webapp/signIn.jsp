@@ -54,7 +54,7 @@
     			%>
     			
     			<script>
-    				let select = confirm("아이디 또는 비밀번호가 잘못되었습니다. \n" + " 회원가입 하시겠습니까?");
+    				let select = confirm("아이디 또는 비밀번호가 잘못되었습니다. \n" + "회원가입 하시겠습니까?");
     				if (select) // 예 라면 회원가입
     					location.href="main.jsp?show=join";
     				else // 아니라면 다시 로그인
